@@ -1,6 +1,6 @@
 {
     "name": "Telegram MixDrop Bot",
-    "description": "This is a simple boat. You generate QRcode with this bot",
+    "description": "This is a simple boat.",
     "repository": "https://github.com/Abhijith-cloud/Telegram-MixDrop-Bot/",
     "keywords": ["telegram", "pyrogram","telegram bot"],
     "env": {
