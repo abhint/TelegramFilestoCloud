@@ -6,13 +6,13 @@
 
 
 from pyrogram import Client
-# from env import ev_data
+from env import ev_data
 
 bot = Client(
     "Telegram MixDrop Bot",
-    bot_token = "", #ev_data.BOT_TOKEN
-    api_id = 1234, #ev_data.API_ID
-    api_hash = "", #ev_data.API_HASH,
+    bot_token = ev_data.BOT_TOKEN
+    api_id = ev_data.API_ID
+    api_hash = ev_data.API_HASH,
     plugins = {
         "root":"bot/plugins"
         }
