@@ -9,6 +9,7 @@ from pyrogram.types.messages_and_media.message import Message
 from bot.plugins.helpers.mixdrop_upload import mixFileup
 from bot.plugins.display import progress
 import time, os
+from bot import LOGGER
 from hurry.filesize import size
 from pyrogram.types import (
     InlineKeyboardMarkup,
@@ -22,6 +23,7 @@ async def userMedia(client, bot):
     f_size = ''
     f_name = ''
     file = ''
+
     userMsg = await client.send_message(
         chat_id=bot.chat.id,
         text = "processing your request...please wait"
@@ -40,10 +42,18 @@ async def userMedia(client, bot):
         link = await mixFileup(file, userMsg, now)
         for i in link:
             pass
+        LOGGER.info(f"""
+        Download:{bot.from_user.id}:
+        File Name:{f_name} 
+        Link:{link}
+        """)
     except Exception as error:
         print(error)
     await bot.reply(
-        text = f"File Name: {f_name}\nSIZE: {size(f_size)}",
+        text = f"""
+        File Name: {f_name}
+        \nSIZE: {size(f_size)}
+        """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -57,5 +67,7 @@ async def userMedia(client, bot):
     )
     try:
         os.remove(file)
+        LOGGER.info(f"{bot.from_user.id} {file} Remove")
     except Exception as error:
+        LOGGER.info(f"{file} not Remove")
         print(error)
