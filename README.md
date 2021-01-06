@@ -21,6 +21,8 @@ class config():
     BOT_TOKEN = '1051231515:AAGv9yJbkpqQBx5nPnSRTNjF66Y5C9u4u3E'  # from @botfather
     APP_ID = 1234567                                              # from https://my.telegram.org/apps
     API_HASH = 'a6ec7e2ead26d1bcac4a3997780a864c'                 # from https://my.telegram.org/apps
+    API_KEY = 'aoHq14CTUQyIPwltD1P'                               # from https://mixdrop.co
+    API_EMAIL = 'mixdrop.login.mail.id@yourmail.com'              # from https://mixdrop.co
 ```
 
 #### Run this bot
