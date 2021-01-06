@@ -4,6 +4,10 @@
     "repository": "https://github.com/Abhijith-cloud/Telegram-MixDrop-Bot/",
     "keywords": ["telegram", "pyrogram","telegram bot"],
     "env": {
+        "ENV": {
+            "description": "Set it to anything to enable configuration by environment variables.",
+            "value": "ANYTHING"
+        },
        "BOT_TOKEN": {
         "description": "Your Bot token from @Botfather",
         "value": ""
