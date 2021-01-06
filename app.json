@@ -6,7 +6,7 @@
     "env": {
         "ENV": {
             "description": "Set it to anything to enable configuration by environment variables.",
-            "value": "ANYTHING"
+            "value": "True"
         },
        "BOT_TOKEN": {
         "description": "Your Bot token from @Botfather",
