@@ -22,11 +22,15 @@ try:
     BOT_TOKEN = os.environ.get('BOT_TOKEN')
     APP_ID = os.environ.get('APP_ID')
     API_HASH = os.environ.get('API_HASH')
+    API_KEY = os.environ.get('API_KEY')
+    API_EMAIL = os.environ.get('API_EMAIL')
   else:
     from sample_config import config
     BOT_TOKEN = config.BOT_TOKEN
     APP_ID = config.APP_ID
     API_HASH = config.API_HASH
+    API_KEY = config.API_KEY
+    API_EMAIL = config.API_EMAIL
 except KeyError:
   LOGGER.error('One or more configuration values are missing exiting now.')
   exit(1)
