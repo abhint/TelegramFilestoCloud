@@ -19,7 +19,16 @@
       "API_HASH": {
         "description": "Your API_HASH from https://my.telegram.org/apps",
         "value": ""
+      },
+        "API_KEY": {
+        "description": "Your API_HASH from https://mixdrop.co/",
+        "value": ""
+      }, 
+        "API_EMAIL": {
+        "description": "Your API_HASH from https://mixdrop.co/",
+        "value": ""
       }
+        
      },
      "buildpacks": [
       {
