@@ -1,6 +1,13 @@
 from logging import error
 import aiohttp
 from bot.plugins.display.time import  time_data
+from bot import (
+    API_KEY,
+    API_EMAIL
+)
+
+env_email = API_EMAIL
+env_api_key = API_KEY
 
 async def mixFileup(file, bot, s_time):
     #https://github.com/odysseusmax/uploads/blob/master/mixdrop.py
@@ -8,8 +15,8 @@ async def mixFileup(file, bot, s_time):
         await bot.edit(
             text = "Uploadig to MixDrop.."
         )
-        email = "veyopi9060@aomrock.com"
-        api_key = "TUtD1QIPwPyaoHql14C"
+        email = env_email
+        api_key = env_api_key
         upload_url = "https://ul.mixdrop.co/api"
         async with aiohttp.ClientSession() as session:
             file_to_upload = file
