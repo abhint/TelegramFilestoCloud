@@ -2,3 +2,4 @@ Pyrogram
 TgCrypto
 aiohttp
 hurry.filesize
+git+git://github.com/google/chatbase-python.git 
