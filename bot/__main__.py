@@ -7,14 +7,24 @@
 
 from pyrogram import Client
 from env import ev_data
-
-bot = Client(
-    "Telegram MixDrop Bot",
-    bot_token = ev_data.BOT_TOKEN
-    api_id = ev_data.API_ID
-    api_hash = ev_data.API_HASH,
-    plugins = {
-        "root":"bot/plugins"
-        }
+import logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
-bot.run()
+LOGGER = logging.getLogger(__name__)
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+
+if __name__ == "__main__":
+    bot = Client(
+        "Telegram MixDrop Bot",
+        bot_token = ev_data.BOT_TOKEN,
+        api_id = ev_data.API_ID,
+        api_hash = ev_data.API_HASH,
+        plugins = {
+            "root":"bot/plugins"
+            }
+        )
+    LOGGER.info('Bot Started :)')
+    bot.run()
+    LOGGER.info('Somting is Wrong :(')
