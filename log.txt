@@ -1,0 +1,741 @@
+2021-01-08 20:41:53,315 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:41:53,934 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 20:41:57,125 - __main__ - INFO - Bot Started :)
+2021-01-08 20:42:07,616 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 20:42:18,629 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 20:42:30,935 - __main__ - INFO - Bot Started :)
+2021-01-08 20:42:41,454 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 20:42:52,466 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 20:43:01,212 - __main__ - INFO - Bot Started :)
+2021-01-08 20:43:11,752 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 20:43:23,422 - __main__ - INFO - Bot Started :)
+2021-01-08 20:43:33,927 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 20:43:44,938 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 20:44:15,476 - __main__ - INFO - Bot Started :)
+2021-01-08 20:44:16,002 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 20:44:17,005 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 20:44:18,008 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 20:44:19,013 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2021-01-08 20:44:26,481 - __main__ - INFO - Bot Started :)
+2021-01-08 20:44:33,062 - bot - INFO - 1377842915 - big_buck_bunny_720p_20mb_mp4.mp4
+2021-01-08 20:44:36,047 - bot - INFO - {
+    "_": "CallbackQuery",
+    "id": "5917790261596872699",
+    "from_user": {
+        "_": "User",
+        "id": 1377842915,
+        "is_self": false,
+        "is_contact": false,
+        "is_mutual_contact": false,
+        "is_deleted": false,
+        "is_bot": false,
+        "is_verified": false,
+        "is_restricted": false,
+        "is_scam": false,
+        "is_support": false,
+        "first_name": "ɹǝⅎᴉɔn⅂",
+        "status": "recently",
+        "language_code": "en",
+        "dc_id": 1,
+        "photo": {
+            "_": "ChatPhoto",
+            "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+            "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+            "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+            "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+        }
+    },
+    "chat_instance": "-1664352884481740456",
+    "message": {
+        "_": "Message",
+        "message_id": 1499,
+        "from_user": {
+            "_": "User",
+            "id": 1351501215,
+            "is_self": true,
+            "is_contact": false,
+            "is_mutual_contact": false,
+            "is_deleted": false,
+            "is_bot": true,
+            "is_verified": false,
+            "is_restricted": false,
+            "is_scam": false,
+            "is_support": false,
+            "first_name": "Lᴜᴄɪғᴇʀ",
+            "username": "Devil_LuciferBot"
+        },
+        "date": "2021-01-08 20:44:33",
+        "chat": {
+            "_": "Chat",
+            "id": 1377842915,
+            "type": "private",
+            "is_verified": false,
+            "is_restricted": false,
+            "is_scam": false,
+            "is_support": false,
+            "first_name": "ɹǝⅎᴉɔn⅂",
+            "photo": {
+                "_": "ChatPhoto",
+                "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+                "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+                "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+                "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+            },
+            "dc_id": 1
+        },
+        "reply_to_message": {
+            "_": "Message",
+            "message_id": 1498,
+            "from_user": {
+                "_": "User",
+                "id": 1377842915,
+                "is_self": false,
+                "is_contact": false,
+                "is_mutual_contact": false,
+                "is_deleted": false,
+                "is_bot": false,
+                "is_verified": false,
+                "is_restricted": false,
+                "is_scam": false,
+                "is_support": false,
+                "first_name": "ɹǝⅎᴉɔn⅂",
+                "status": "recently",
+                "language_code": "en",
+                "dc_id": 1,
+                "photo": {
+                    "_": "ChatPhoto",
+                    "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+                    "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+                    "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+                    "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+                }
+            },
+            "date": "2021-01-08 20:44:32",
+            "chat": {
+                "_": "Chat",
+                "id": 1377842915,
+                "type": "private",
+                "is_verified": false,
+                "is_restricted": false,
+                "is_scam": false,
+                "is_support": false,
+                "first_name": "ɹǝⅎᴉɔn⅂",
+                "photo": {
+                    "_": "ChatPhoto",
+                    "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+                    "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+                    "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+                    "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+                },
+                "dc_id": 1
+            },
+            "forward_from": {
+                "_": "User",
+                "id": 1447796062,
+                "is_self": false,
+                "is_contact": false,
+                "is_mutual_contact": false,
+                "is_deleted": false,
+                "is_bot": true,
+                "is_verified": false,
+                "is_restricted": false,
+                "is_scam": false,
+                "is_support": false,
+                "first_name": "Technical Mohd faiz bot",
+                "username": "URLuploaderz_bot",
+                "dc_id": 1,
+                "photo": {
+                    "_": "ChatPhoto",
+                    "small_file_id": "AQADAQAD26gxG4B3qEYACM12g0kXAAMCAANenUtWAAToyJiulRDh0s_TAgABHgQ",
+                    "small_photo_unique_id": "AQADzXaDSRcAA8_TAgAB",
+                    "big_file_id": "AQADAQAD26gxG4B3qEYACM12g0kXAAMDAANenUtWAAToyJiulRDh0tHTAgABHgQ",
+                    "big_photo_unique_id": "AQADzXaDSRcAA9HTAgAB"
+                }
+            },
+            "forward_date": "2021-01-08 13:10:04",
+            "mentioned": false,
+            "scheduled": false,
+            "from_scheduled": false,
+            "media": true,
+            "video": {
+                "_": "Video",
+                "file_id": "BAACAgEAAxkBAAIF2l_4dts2HX8yiDXeac_yk43BGlGMAALqAAO8eslHWKse1iaORGIeBA",
+                "file_unique_id": "AgAD6gADvHrJRw",
+                "width": 320,
+                "height": 320,
+                "duration": 117,
+                "file_name": "big_buck_bunny_720p_20mb_mp4.mp4",
+                "mime_type": "video/mp4",
+                "file_size": 21069678,
+                "supports_streaming": true,
+                "date": "2021-01-08 13:10:04"
+            },
+            "caption": "big_buck_bunny_720p_20mb",
+            "outgoing": false
+        },
+        "mentioned": false,
+        "scheduled": false,
+        "from_scheduled": false,
+        "text": "File Name: big_buck_bunny_720p_20mb_mp4.mp4\nFile Size: 20M",
+        "entities": [
+            {
+                "_": "MessageEntity",
+                "type": "code",
+                "offset": 11,
+                "length": 32
+            },
+            {
+                "_": "MessageEntity",
+                "type": "code",
+                "offset": 55,
+                "length": 3
+            }
+        ],
+        "outgoing": true,
+        "reply_markup": {
+            "_": "InlineKeyboardMarkup",
+            "inline_keyboard": [
+                [
+                    {
+                        "_": "InlineKeyboardButton",
+                        "text": "MixDrop",
+                        "callback_data": "MixDrop"
+                    },
+                    {
+                        "_": "InlineKeyboardButton",
+                        "text": "File.io",
+                        "callback_data": "File.io"
+                    }
+                ]
+            ]
+        }
+    },
+    "data": "MixDrop"
+}
+2021-01-08 20:44:37,855 - pyrogram.dispatcher - ERROR - 'CallbackQuery' object has no attribute 'file_id'
+Traceback (most recent call last):
+  File "/home/abhijith/.local/lib/python3.8/site-packages/pyrogram/dispatcher.py", line 208, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/abhijith/GitHub/python/Telegram-MixDrop-Bot/bot/plugins/helpers/call_back.py", line 11, in server_selection
+    await fileDownload(client, server)
+  File "/home/abhijith/GitHub/python/Telegram-MixDrop-Bot/bot/plugins/helpers/dowloader.py", line 14, in fileDownload
+    file_path = await client.download_media(
+  File "/home/abhijith/.local/lib/python3.8/site-packages/pyrogram/methods/messages/download_media.py", line 120, in download_media
+    file_id_str = media.file_id
+AttributeError: 'CallbackQuery' object has no attribute 'file_id'
+2021-01-08 20:46:20,315 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:46:21,172 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 20:46:25,303 - __main__ - INFO - Bot Started :)
+2021-01-08 20:46:29,926 - bot - INFO - 1377842915 - big_buck_bunny_720p_20mb_mp4.mp4
+2021-01-08 20:46:34,351 - bot - INFO - {
+    "_": "CallbackQuery",
+    "id": "5917790263071651433",
+    "from_user": {
+        "_": "User",
+        "id": 1377842915,
+        "is_self": false,
+        "is_contact": false,
+        "is_mutual_contact": false,
+        "is_deleted": false,
+        "is_bot": false,
+        "is_verified": false,
+        "is_restricted": false,
+        "is_scam": false,
+        "is_support": false,
+        "first_name": "ɹǝⅎᴉɔn⅂",
+        "status": "recently",
+        "language_code": "en",
+        "dc_id": 1,
+        "photo": {
+            "_": "ChatPhoto",
+            "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+            "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+            "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+            "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+        }
+    },
+    "chat_instance": "-1664352884481740456",
+    "message": {
+        "_": "Message",
+        "message_id": 1501,
+        "from_user": {
+            "_": "User",
+            "id": 1351501215,
+            "is_self": true,
+            "is_contact": false,
+            "is_mutual_contact": false,
+            "is_deleted": false,
+            "is_bot": true,
+            "is_verified": false,
+            "is_restricted": false,
+            "is_scam": false,
+            "is_support": false,
+            "first_name": "Lᴜᴄɪғᴇʀ",
+            "username": "Devil_LuciferBot"
+        },
+        "date": "2021-01-08 20:46:30",
+        "chat": {
+            "_": "Chat",
+            "id": 1377842915,
+            "type": "private",
+            "is_verified": false,
+            "is_restricted": false,
+            "is_scam": false,
+            "is_support": false,
+            "first_name": "ɹǝⅎᴉɔn⅂",
+            "photo": {
+                "_": "ChatPhoto",
+                "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+                "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+                "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+                "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+            },
+            "dc_id": 1
+        },
+        "reply_to_message": {
+            "_": "Message",
+            "message_id": 1500,
+            "from_user": {
+                "_": "User",
+                "id": 1377842915,
+                "is_self": false,
+                "is_contact": false,
+                "is_mutual_contact": false,
+                "is_deleted": false,
+                "is_bot": false,
+                "is_verified": false,
+                "is_restricted": false,
+                "is_scam": false,
+                "is_support": false,
+                "first_name": "ɹǝⅎᴉɔn⅂",
+                "status": "recently",
+                "language_code": "en",
+                "dc_id": 1,
+                "photo": {
+                    "_": "ChatPhoto",
+                    "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+                    "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+                    "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+                    "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+                }
+            },
+            "date": "2021-01-08 20:46:29",
+            "chat": {
+                "_": "Chat",
+                "id": 1377842915,
+                "type": "private",
+                "is_verified": false,
+                "is_restricted": false,
+                "is_scam": false,
+                "is_support": false,
+                "first_name": "ɹǝⅎᴉɔn⅂",
+                "photo": {
+                    "_": "ChatPhoto",
+                    "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+                    "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+                    "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+                    "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+                },
+                "dc_id": 1
+            },
+            "forward_from": {
+                "_": "User",
+                "id": 1447796062,
+                "is_self": false,
+                "is_contact": false,
+                "is_mutual_contact": false,
+                "is_deleted": false,
+                "is_bot": true,
+                "is_verified": false,
+                "is_restricted": false,
+                "is_scam": false,
+                "is_support": false,
+                "first_name": "Technical Mohd faiz bot",
+                "username": "URLuploaderz_bot",
+                "dc_id": 1,
+                "photo": {
+                    "_": "ChatPhoto",
+                    "small_file_id": "AQADAQAD26gxG4B3qEYACM12g0kXAAMCAANenUtWAAToyJiulRDh0s_TAgABHgQ",
+                    "small_photo_unique_id": "AQADzXaDSRcAA8_TAgAB",
+                    "big_file_id": "AQADAQAD26gxG4B3qEYACM12g0kXAAMDAANenUtWAAToyJiulRDh0tHTAgABHgQ",
+                    "big_photo_unique_id": "AQADzXaDSRcAA9HTAgAB"
+                }
+            },
+            "forward_date": "2021-01-08 13:10:04",
+            "mentioned": false,
+            "scheduled": false,
+            "from_scheduled": false,
+            "media": true,
+            "video": {
+                "_": "Video",
+                "file_id": "BAACAgEAAxkBAAIF3F_4d1Jx9er65qARusvqFmzkJcNpAALqAAO8eslHWKse1iaORGIeBA",
+                "file_unique_id": "AgAD6gADvHrJRw",
+                "width": 320,
+                "height": 320,
+                "duration": 117,
+                "file_name": "big_buck_bunny_720p_20mb_mp4.mp4",
+                "mime_type": "video/mp4",
+                "file_size": 21069678,
+                "supports_streaming": true,
+                "date": "2021-01-08 13:10:04"
+            },
+            "caption": "big_buck_bunny_720p_20mb",
+            "outgoing": false
+        },
+        "mentioned": false,
+        "scheduled": false,
+        "from_scheduled": false,
+        "text": "File Name: big_buck_bunny_720p_20mb_mp4.mp4\nFile Size: 20M",
+        "entities": [
+            {
+                "_": "MessageEntity",
+                "type": "code",
+                "offset": 11,
+                "length": 32
+            },
+            {
+                "_": "MessageEntity",
+                "type": "code",
+                "offset": 55,
+                "length": 3
+            }
+        ],
+        "outgoing": true,
+        "reply_markup": {
+            "_": "InlineKeyboardMarkup",
+            "inline_keyboard": [
+                [
+                    {
+                        "_": "InlineKeyboardButton",
+                        "text": "MixDrop",
+                        "callback_data": "MixDrop"
+                    },
+                    {
+                        "_": "InlineKeyboardButton",
+                        "text": "File.io",
+                        "callback_data": "File.io"
+                    }
+                ]
+            ]
+        }
+    },
+    "data": "MixDrop"
+}
+2021-01-08 20:46:35,633 - pyrogram.dispatcher - ERROR - 'CallbackQuery' object has no attribute 'reply_to_message'
+Traceback (most recent call last):
+  File "/home/abhijith/.local/lib/python3.8/site-packages/pyrogram/dispatcher.py", line 208, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/abhijith/GitHub/python/Telegram-MixDrop-Bot/bot/plugins/helpers/call_back.py", line 12, in server_selection
+    await fileDownload(client, server)
+  File "/home/abhijith/GitHub/python/Telegram-MixDrop-Bot/bot/plugins/helpers/dowloader.py", line 15, in fileDownload
+    message = bot.reply_to_message
+AttributeError: 'CallbackQuery' object has no attribute 'reply_to_message'
+2021-01-08 20:48:15,720 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:48:16,339 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 20:48:18,593 - __main__ - INFO - Bot Started :)
+2021-01-08 20:48:27,008 - bot - INFO - 1377842915 - big_buck_bunny_720p_20mb_mp4.mp4
+2021-01-08 20:48:29,893 - bot - INFO - {
+    "_": "CallbackQuery",
+    "id": "5917790260636539223",
+    "from_user": {
+        "_": "User",
+        "id": 1377842915,
+        "is_self": false,
+        "is_contact": false,
+        "is_mutual_contact": false,
+        "is_deleted": false,
+        "is_bot": false,
+        "is_verified": false,
+        "is_restricted": false,
+        "is_scam": false,
+        "is_support": false,
+        "first_name": "ɹǝⅎᴉɔn⅂",
+        "status": "recently",
+        "language_code": "en",
+        "dc_id": 1,
+        "photo": {
+            "_": "ChatPhoto",
+            "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+            "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+            "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+            "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+        }
+    },
+    "chat_instance": "-1664352884481740456",
+    "message": {
+        "_": "Message",
+        "message_id": 1503,
+        "from_user": {
+            "_": "User",
+            "id": 1351501215,
+            "is_self": true,
+            "is_contact": false,
+            "is_mutual_contact": false,
+            "is_deleted": false,
+            "is_bot": true,
+            "is_verified": false,
+            "is_restricted": false,
+            "is_scam": false,
+            "is_support": false,
+            "first_name": "Lᴜᴄɪғᴇʀ",
+            "username": "Devil_LuciferBot"
+        },
+        "date": "2021-01-08 20:48:27",
+        "chat": {
+            "_": "Chat",
+            "id": 1377842915,
+            "type": "private",
+            "is_verified": false,
+            "is_restricted": false,
+            "is_scam": false,
+            "is_support": false,
+            "first_name": "ɹǝⅎᴉɔn⅂",
+            "photo": {
+                "_": "ChatPhoto",
+                "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+                "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+                "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+                "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+            },
+            "dc_id": 1
+        },
+        "reply_to_message": {
+            "_": "Message",
+            "message_id": 1502,
+            "from_user": {
+                "_": "User",
+                "id": 1377842915,
+                "is_self": false,
+                "is_contact": false,
+                "is_mutual_contact": false,
+                "is_deleted": false,
+                "is_bot": false,
+                "is_verified": false,
+                "is_restricted": false,
+                "is_scam": false,
+                "is_support": false,
+                "first_name": "ɹǝⅎᴉɔn⅂",
+                "status": "recently",
+                "language_code": "en",
+                "dc_id": 1,
+                "photo": {
+                    "_": "ChatPhoto",
+                    "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+                    "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+                    "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+                    "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+                }
+            },
+            "date": "2021-01-08 20:48:26",
+            "chat": {
+                "_": "Chat",
+                "id": 1377842915,
+                "type": "private",
+                "is_verified": false,
+                "is_restricted": false,
+                "is_scam": false,
+                "is_support": false,
+                "first_name": "ɹǝⅎᴉɔn⅂",
+                "photo": {
+                    "_": "ChatPhoto",
+                    "small_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAIAA-M2IFIABAJvjWiKEWWC2J4FAAEeBA",
+                    "small_photo_unique_id": "AQADxd1uBgAE2J4FAAE",
+                    "big_file_id": "AQADAQADiqgxGwK1WUUACMXdbgYABAMAA-M2IFIABAJvjWiKEWWC2p4FAAEeBA",
+                    "big_photo_unique_id": "AQADxd1uBgAE2p4FAAE"
+                },
+                "dc_id": 1
+            },
+            "forward_from": {
+                "_": "User",
+                "id": 1447796062,
+                "is_self": false,
+                "is_contact": false,
+                "is_mutual_contact": false,
+                "is_deleted": false,
+                "is_bot": true,
+                "is_verified": false,
+                "is_restricted": false,
+                "is_scam": false,
+                "is_support": false,
+                "first_name": "Technical Mohd faiz bot",
+                "username": "URLuploaderz_bot",
+                "dc_id": 1,
+                "photo": {
+                    "_": "ChatPhoto",
+                    "small_file_id": "AQADAQAD26gxG4B3qEYACM12g0kXAAMCAANenUtWAAToyJiulRDh0s_TAgABHgQ",
+                    "small_photo_unique_id": "AQADzXaDSRcAA8_TAgAB",
+                    "big_file_id": "AQADAQAD26gxG4B3qEYACM12g0kXAAMDAANenUtWAAToyJiulRDh0tHTAgABHgQ",
+                    "big_photo_unique_id": "AQADzXaDSRcAA9HTAgAB"
+                }
+            },
+            "forward_date": "2021-01-08 13:10:04",
+            "mentioned": false,
+            "scheduled": false,
+            "from_scheduled": false,
+            "media": true,
+            "video": {
+                "_": "Video",
+                "file_id": "BAACAgEAAxkBAAIF3l_4d8UCEof71yVchC2WOsR5Fr4qAALqAAO8eslHWKse1iaORGIeBA",
+                "file_unique_id": "AgAD6gADvHrJRw",
+                "width": 320,
+                "height": 320,
+                "duration": 117,
+                "file_name": "big_buck_bunny_720p_20mb_mp4.mp4",
+                "mime_type": "video/mp4",
+                "file_size": 21069678,
+                "supports_streaming": true,
+                "date": "2021-01-08 13:10:04"
+            },
+            "caption": "big_buck_bunny_720p_20mb",
+            "outgoing": false
+        },
+        "mentioned": false,
+        "scheduled": false,
+        "from_scheduled": false,
+        "text": "File Name: big_buck_bunny_720p_20mb_mp4.mp4\nFile Size: 20M",
+        "entities": [
+            {
+                "_": "MessageEntity",
+                "type": "code",
+                "offset": 11,
+                "length": 32
+            },
+            {
+                "_": "MessageEntity",
+                "type": "code",
+                "offset": 55,
+                "length": 3
+            }
+        ],
+        "outgoing": true,
+        "reply_markup": {
+            "_": "InlineKeyboardMarkup",
+            "inline_keyboard": [
+                [
+                    {
+                        "_": "InlineKeyboardButton",
+                        "text": "MixDrop",
+                        "callback_data": "MixDrop"
+                    },
+                    {
+                        "_": "InlineKeyboardButton",
+                        "text": "File.io",
+                        "callback_data": "File.io"
+                    }
+                ]
+            ]
+        }
+    },
+    "data": "MixDrop"
+}
+2021-01-08 20:49:39,734 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:39,913 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:41,906 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:42,054 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:44,424 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:44,517 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:44,733 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,232 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,262 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,299 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,325 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,358 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,393 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,420 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,447 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,477 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,507 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,544 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,573 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,599 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,638 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:49:45,684 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:50:05,033 - __main__ - INFO - Bot Started :)
+2021-01-08 20:50:11,574 - bot - INFO - 1377842915 - big_buck_bunny_720p_20mb_mp4.mp4
+2021-01-08 20:50:42,183 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:50:42,339 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:50:45,152 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:50:45,350 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:50:45,566 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:54:10,825 - __main__ - INFO - Bot Started :)
+2021-01-08 20:54:14,913 - bot - INFO - 1070202696 - sample_video.mkv
+2021-01-08 20:57:05,314 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 20:57:05,935 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 20:57:09,580 - __main__ - INFO - Bot Started :)
+2021-01-08 20:57:18,408 - bot - INFO - 1070202696 - sample_video.mkv
+2021-01-08 21:14:27,230 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 21:14:27,471 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 21:16:09,898 - __main__ - INFO - Bot Started :)
+2021-01-08 21:16:20,432 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:16:31,446 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:16:42,456 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:16:43,460 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2021-01-08 21:16:53,472 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:17:04,484 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:17:15,500 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:17:16,502 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2021-01-08 21:17:26,510 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:17:37,524 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:17:48,533 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:17:49,537 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2021-01-08 21:17:59,549 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:21:40,012 - __main__ - INFO - Bot Started :)
+2021-01-08 21:21:50,546 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:22:01,554 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: timed out
+2021-01-08 21:22:04,106 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:05,110 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:06,114 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:07,118 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2021-01-08 21:22:07,121 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:08,124 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:09,128 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:10,132 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2021-01-08 21:22:10,134 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:11,137 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:12,140 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:20,714 - __main__ - INFO - Bot Started :)
+2021-01-08 21:22:21,289 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:22,292 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:23,296 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [Errno 101] Network is unreachable
+2021-01-08 21:22:24,301 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2021-01-08 21:22:36,580 - __main__ - INFO - Bot Started :)
+2021-01-08 21:22:45,778 - bot - INFO - 1070202696 - sample_video.mkv
+2021-01-08 21:23:37,810 - pyrogram.dispatcher - ERROR - 'CallbackQuery' object has no attribute 'edit'
+Traceback (most recent call last):
+  File "/home/abhijith/.local/lib/python3.8/site-packages/pyrogram/dispatcher.py", line 208, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/abhijith/GitHub/python/Telegram-MixDrop-Bot/bot/plugins/helpers/call_back.py", line 11, in server_selection
+    await fileDownload(client, server)
+  File "/home/abhijith/GitHub/python/Telegram-MixDrop-Bot/bot/plugins/helpers/dowloader.py", line 27, in fileDownload
+    await bot.edit(
+AttributeError: 'CallbackQuery' object has no attribute 'edit'
+2021-01-08 21:40:25,656 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 21:40:26,582 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 21:40:27,997 - __main__ - INFO - Bot Started :)
+2021-01-08 21:40:36,640 - bot - INFO - 1070202696 - sample_video.mkv
+2021-01-08 21:42:45,632 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 21:42:46,528 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 21:42:57,815 - __main__ - INFO - Bot Started :)
+2021-01-08 21:43:13,465 - bot - INFO - 1070202696 - sample_video.mkv
+2021-01-08 21:48:13,265 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 21:48:14,335 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 21:49:11,273 - __main__ - INFO - Bot Started :)
+2021-01-08 21:49:27,860 - bot - INFO - 1070202696 - sample_video.mkv
+2021-01-08 21:55:55,926 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 21:55:56,992 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 21:55:59,099 - __main__ - INFO - Bot Started :)
+2021-01-08 21:56:10,675 - bot - INFO - 1070202696 - sample_video.mkv
+2021-01-08 21:57:44,254 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 21:57:44,260 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 22:00:18,367 - __main__ - INFO - Bot Started :)
+2021-01-08 22:00:54,509 - bot - INFO - 1070202696 - sample_video.mkv
+2021-01-08 22:02:51,072 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 22:02:51,845 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 22:02:54,312 - __main__ - INFO - Bot Started :)
+2021-01-08 22:03:30,864 - bot - INFO - 1070202696 - sample_video.mkv
+2021-01-08 22:05:00,441 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 22:05:01,117 - __main__ - INFO - Bot is Stopped Working :(
+2021-01-08 22:05:03,742 - __main__ - INFO - Bot Started :)
+2021-01-08 22:05:47,844 - bot - INFO - 1070202696 - sample_video.mkv
+2021-01-08 22:08:43,520 - root - INFO - Stop signal received (2). Exiting...
+2021-01-08 22:08:43,794 - __main__ - INFO - Bot is Stopped Working :(
