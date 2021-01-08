@@ -14,7 +14,7 @@ async def fileIO(file_name, client, bot, s_time):
         files = {
             'file': (file_name, open( file_name, 'rb')),
         }
-        response = await requests.post('https://file.io/', files=files)
+        response = requests.post('https://file.io/', files=files)
         response = await json.loads(response.text)
         dl_b = response['link']
         await downloadButton(dl_b)
