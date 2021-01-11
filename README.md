@@ -1,6 +1,7 @@
 ## What is about this bot ?
 
-### This bot uploads telegram files to mixdrop.co. Usage: Send any file or URL and the bot will upload it to mixdrop.co
+### This bot uploads telegram files to mixdrop.co, File.io.
+### Usage: Send any file and the bot will upload it to MixDrop.co, File.io
 
 ### Heroku Deploy
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Abhijith-cloud/Telegram-MixDrop-Bot/)
