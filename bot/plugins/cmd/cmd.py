@@ -3,8 +3,8 @@
 # https://github.com/Abhijith-cloud
 # Copyright ABHIJITH N T
 # Thank you https://github.com/pyrogram/pyrogram
-
-from pyrogram import Client, filters
+from pyrogram import Client
+from pyrogram import filters
 
 from bot import msg
 
