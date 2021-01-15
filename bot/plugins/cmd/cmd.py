@@ -7,7 +7,7 @@
 from pyrogram import Client,filters
 from bot import msg
 
-@Client.on_message(filters.command(["start"]))
+@Client.on_message(filters.command("start"))
 async def start(client, message):
     await client.send_message(
         chat_id=message.chat.id,
