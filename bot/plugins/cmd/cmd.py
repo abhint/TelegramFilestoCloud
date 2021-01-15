@@ -14,7 +14,7 @@ async def start(client, message):
         chat_id=message.chat.id,
         text=f"Hey {message.from_user.first_name},{msg.start}{msg.source}",
         reply_to_message_id=message.message_id,
-        parse_mode="html"
+        parse_mode="html",
     )
 
 
@@ -24,5 +24,5 @@ async def help(client, message):
         chat_id=message.chat.id,
         text=f"Hey {message.from_user.first_name},{msg.help}{msg.source}",
         reply_to_message_id=message.message_id,
-        parse_mode="html"
+        parse_mode="html",
     )
