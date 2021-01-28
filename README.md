@@ -1,13 +1,16 @@
 ## What is about this bot ?
 
 ### This bot uploads telegram files to mixdrop.co, File.io.
+
 ### Usage: Send any file and the bot will upload it to MixDrop.co, File.io
 
 ### Heroku Deploy
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Abhijith-cloud/Telegram-MixDrop-Bot/)
 
 # Installation
-#### Clone 
+
+#### Clone
 
 ```sh
 git clone https://github.com/Abhijith-cloud/TelegramFiletoCloud.git
@@ -21,6 +24,7 @@ cd TelegramFiletoCloud
 ```sh
 pip3 install -U -r requirements.txt
 ```
+
 #### Edit Sample_config.py and replace it with your bot details like this
 
 ```python3
@@ -33,9 +37,12 @@ class config():
 ```
 
 #### Run this bot
+
 ```sh
 python3 -m bot
 ```
-## :clap:  Supporters
+
+## :clap: Supporters
+
 [![Stargazers repo roster for @Abhijith-cloud/TelegramFiletoCloud](https://reporoster.com/stars/Abhijith-cloud/TelegramFiletoCloud)](https://github.com/Abhijith-cloud/TelegramFiletoCloud/stargazers)
 [![Forkers repo roster for @Abhijith-cloud/TelegramFiletoCloud](https://reporoster.com/forks/Abhijith-cloud/TelegramFiletoCloud)](https://github.com/Abhijith-cloud/TelegramFiletoCloud/network/members)
