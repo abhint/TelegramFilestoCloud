@@ -7,15 +7,21 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Abhijith-cloud/Telegram-MixDrop-Bot/)
 
 # Installation
+#### Clone 
+
+```sh
+git clone https://github.com/Abhijith-cloud/TelegramFiletoCloud.git
+
+cd TelegramFiletoCloud
+
+```
 
 #### Install Requirements
 
 ```sh
 pip3 install -U -r requirements.txt
 ```
-#### Edite sample_config.py
-
-##### Replace with your bot details
+#### Edit Sample_config.py and replace it with your bot details like this
 
 ```python3
 class config():
