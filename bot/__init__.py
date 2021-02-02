@@ -24,8 +24,8 @@ try:
         API_KEY = os.environ.get('API_KEY')
         API_EMAIL = os.environ.get('API_EMAIL')
         GET_AUTH_USER = os.environ.get('AUTH_USER')
-        for i in GET_AUTH_USER:
-            AUTH_USER.append(i)
+        for i in GET_AUTH_USER.split(','):
+            AUTH_USER.append(int(i))
         print(AUTH_USER)
     else:
         from sample_config import Config
