@@ -1,5 +1,4 @@
-Pyrogram
+Pyrogram~=1.1.13
 TgCrypto
-aiohttp
+aiohttp~=3.7.3
 hurry.filesize
-git+git://github.com/google/chatbase-python.git
