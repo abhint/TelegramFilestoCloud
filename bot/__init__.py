@@ -22,7 +22,7 @@ try:
         API_HASH = os.environ.get('API_HASH')
         API_KEY = os.environ.get('API_KEY')
         API_EMAIL = os.environ.get('API_EMAIL')
-        AUTH_USER = [os.environ.get('AUTH_USER')]
+        AUTH_USER = [int(os.environ.get('AUTH_USER'))]
     else:
         from sample_config import Config
 
