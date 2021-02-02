@@ -17,12 +17,16 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 ENV = bool(os.environ.get('ENV', False))
 try:
     if ENV:
+        AUTH_USER = []
         BOT_TOKEN = os.environ.get('BOT_TOKEN')
         APP_ID = os.environ.get('APP_ID')
         API_HASH = os.environ.get('API_HASH')
         API_KEY = os.environ.get('API_KEY')
         API_EMAIL = os.environ.get('API_EMAIL')
-        AUTH_USER = [int(os.environ.get('AUTH_USER'))]
+        GET_AUTH_USER = os.environ.get('AUTH_USER')
+        for i in GET_AUTH_USER:
+            AUTH_USER.append(i)
+        print(AUTH_USER)
     else:
         from sample_config import Config
 
