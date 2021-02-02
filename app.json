@@ -1,12 +1,8 @@
 {
     "name": "Telegram MixDrop Bot",
-    "description": "This bot uploads telegram files to MixDrop.co,File.io.",
+    "description": "This bot uploads telegram files to mixdrop.co",
     "repository": "https://github.com/Abhijith-cloud/Telegram-MixDrop-Bot/",
-    "keywords": [
-      "telegram",
-      "pyrogram",
-      "telegram bot"
-    ],
+    "keywords": ["telegram", "pyrogram","telegram bot"],
     "env": {
         "ENV": {
             "description": "Set it to anything to enable configuration by environment variables.",
@@ -31,11 +27,8 @@
         "API_EMAIL": {
         "description": "Your API_HASH from https://mixdrop.co/",
         "value": ""
-      },
-      "AUTH_USER": {
-        "description": "Add Your Telegram Chat ID e.g: 1070202696, NEXT CHAT ID , AND NEXT CHAT ID",
-        "value" : "1070202696,"
       }
+        
      },
      "buildpacks": [
       {

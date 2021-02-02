@@ -5,7 +5,6 @@
 
 import time
 
-
 def time_data(start_time):
     end = time.time()
     now = end - start_time
@@ -17,9 +16,9 @@ def time_data(start_time):
     minutes = now_time // 60
     now_time %= 60
     seconds = now_time
-    if day != 0:
+    if(day!=0):
         return "%dd %dh %dm %ds" % (day, hour, minutes, seconds)
-    if hour != 0:
+    if(hour!=0):
         return "%dh %dm %ds" % (hour, minutes, seconds)
     else:
         return "%dm %ds" % (minutes, seconds)

@@ -1,7 +1,7 @@
 ## What is about this bot ?
 
-### This bot uploads telegram files to MixDrop.co, File.io.
-### Usage: Send any file, and the bot will upload it to MixDrop.co, File.io
+### This bot uploads telegram files to mixdrop.co, File.io.
+### Usage: Send any file and the bot will upload it to MixDrop.co, File.io
 
 ### Heroku Deploy
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Abhijith-cloud/Telegram-MixDrop-Bot/)
@@ -24,7 +24,7 @@ pip3 install -U -r requirements.txt
 #### Edit Sample_config.py and replace it with your bot details like this
 
 ```python3
-class Config:
+class config():
     BOT_TOKEN = '1051231515:AAGv9yJbkpqQBx5nPnSRTNjF66Y5C9u4u3E'  # from @botfather
     APP_ID = 1234567                                              # from https://my.telegram.org/apps
     API_HASH = 'a6ec7e2ead26d1bcac4a3997780a864c'                 # from https://my.telegram.org/apps

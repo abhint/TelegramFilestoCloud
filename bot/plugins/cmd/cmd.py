@@ -4,22 +4,22 @@
 # Copyright ABHIJITH N T
 # Thank you https://github.com/pyrogram/pyrogram
 
-from bot.filetocloud import CloudBot, filters
-from bot import Msg
+from pyrogram import Client,filters
+from bot import msg
 
-@CloudBot.on_message(filters.command("start"))
-async def start_message(client, message):
+@Client.on_message(filters.command("start"))
+async def start(client, message):
     await client.send_message(
         chat_id=message.chat.id,
-        text=f"Hey {message.from_user.first_name},{Msg.start}{Msg.source}",
+        text=f"Hey {message.from_user.first_name},{msg.start}{msg.source}",
         reply_to_message_id=message.message_id,
-        parse_mode="html"
+        parse_mode = "html"
     )
-@CloudBot.on_message(filters.command(["help", "h"]))
-async def help_message(client, message):
+@Client.on_message(filters.command(["help","h"]))
+async def help(client, message):
     await client.send_message(
         chat_id=message.chat.id,
-        text=f"Hey {message.from_user.first_name},{Msg.help}{Msg.source}",
+        text=f"Hey {message.from_user.first_name},{msg.help}{msg.source}",
         reply_to_message_id=message.message_id,
-        parse_mode="html"
+        parse_mode = "html"
     )
