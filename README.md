@@ -30,6 +30,7 @@ class Config:
     API_HASH = 'a6ec7e2ead26d1bcac4a3997780a864c'                 # from https://my.telegram.org/apps
     API_KEY = 'aoHq14CTUQyIPwltD1P'                               # from https://mixdrop.co
     API_EMAIL = 'mixdrop.login.mail.id@yourmail.com'              # from https://mixdrop.co
+    AUTH_USERS = [1070202696, <YOUR TELEGRAM CHAT ID>]                                     # ADD YOUR USER ID
 ```
 
 #### Run this bot
