@@ -22,7 +22,9 @@ async def fileDownload(client, bot):
         message_id=bot.message.message_id,
         text="processing your request...please wait",
     )
+    
     user_progress = user_message
+    
     try:
         file_path = await client.download_media(
             message=user_message.reply_to_message,
@@ -38,9 +40,9 @@ async def fileDownload(client, bot):
         print(time.sleep(e.x))
 
     if upload_server == "MixDrop":
-        await mixFileup(file_path, client, bot, now)
+        await mixFileup(file_path, client, user_progress, now)
     if upload_server == "File.io":
-        await fileIO(file_path, client, bot, now)
+        await fileIO(file_path, client, user_progress, now)
 
     try:
         os.remove(file_path)
