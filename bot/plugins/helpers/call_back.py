@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# This is bot coded by Abhijith-cloud and used for educational purposes only
-# https://github.com/Abhijith-cloud
+# This is bot coded by AbhijithCloud and used for educational purposes only
+# https://github.com/AbhijithCloud
 # Copyright ABHIJITH N T
 # Thank you https://github.com/pyrogram/pyrogram
 from bot.filetocloud import CloudBot
