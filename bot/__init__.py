@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# This is bot coded by AbhijithCloud and used for educational purposes only
+# This is bot coded by Abhijith N T and used for educational purposes only
 # https://github.com/AbhijithNT
 # Copyright ABHIJITH N T
 # Thank you https://github.com/pyrogram/pyrogram
@@ -43,7 +43,7 @@ except KeyError:
 
 
 class Msg:
-    source = "\nsource: https://github.com/AbhijithCloud/TelegramFiletoCloud"
+    source = "\nsource: https://github.com/AbhijithNT/TelegramFiletoCloud"
     start = "\n<b>This bot uploads telegram files to MixDrop.co,File.io.\nAdmin: @thankappan369</b>"
     error = "something is went wrong\n{error} \ncontact admin @thankappan369"
     help = "Usage: <b>Send any file and the bot will upload it to MixDrop.co,File.io</b>"
