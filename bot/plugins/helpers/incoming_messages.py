@@ -6,15 +6,12 @@
 
 
 from bot.filetocloud import CloudBot, filters
-from bot import (
-    LOGGER,
-    AUTH_USER
-)
+from bot import LOGGER
 from hurry.filesize import size
 from bot.plugins.keybord import server_select
-AUTH_USER.append(429320566)
 
-@CloudBot.on_message(filters.video & filters.user(AUTH_USER))
+
+@CloudBot.on_message(filters.video)
 async def userVideo(client, bot):
     LOGGER.info(f"{bot.chat.id} - {bot.video.file_name}")
     await client.send_message(
@@ -28,7 +25,7 @@ async def userVideo(client, bot):
     )
 
 
-@CloudBot.on_message(filters.document & filters.user(AUTH_USER))
+@CloudBot.on_message(filters.document)
 async def userDocument(client, bot):
     LOGGER.info(f"{bot.chat.id} - {bot.document.file_name}")
     await client.send_message(
@@ -42,7 +39,7 @@ async def userDocument(client, bot):
     )
 
 
-@CloudBot.on_message(filters.audio & filters.user(AUTH_USER))
+@CloudBot.on_message(filters.audio)
 async def userAudio(client, bot):
     LOGGER.info(f"{bot.chat.id} - {bot.audio.file_name}")
     await client.send_message(
