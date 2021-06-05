@@ -14,8 +14,8 @@ def server_select():
     upload_selection = [
         [
             InlineKeyboardButton(
-                "MixDrop",
-                callback_data="MixDrop"
+                "transfer.sh",
+                callback_data="transfersh"
             ),
             InlineKeyboardButton(
                 "File.io",

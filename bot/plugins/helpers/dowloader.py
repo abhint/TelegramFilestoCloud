@@ -5,7 +5,7 @@
 # Thank you https://github.com/pyrogram/pyrogram
 
 from bot.plugins.upload_servers.fileio_upload import fileIO
-from bot.plugins.upload_servers.mixdrop_upload import mixFileup
+from bot.plugins.upload_servers.transfersh import transferSH
 from bot.plugins.display import progress
 from bot import LOGGER
 import os
@@ -39,10 +39,12 @@ async def fileDownload(client, bot):
         LOGGER.info(f"{e}")
         print(time.sleep(e.x))
 
-    if upload_server == "MixDrop":
-        await mixFileup(file_path, client, user_progress, now)
+    # if upload_server == "MixDrop":
+    #     await mixFileup(file_path, client, user_progress, now)
     if upload_server == "File.io":
         await fileIO(file_path, client, user_progress, now)
+    if upload_server == "transfersh":
+        await transferSH(file_path, client, user_progress, now)
 
     try:
         os.remove(file_path)
