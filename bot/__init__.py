@@ -21,22 +21,20 @@ try:
         BOT_TOKEN = os.environ.get('BOT_TOKEN')
         APP_ID = os.environ.get('APP_ID')
         API_HASH = os.environ.get('API_HASH')
-        API_KEY = os.environ.get('API_KEY')
-        API_EMAIL = os.environ.get('API_EMAIL')
-        GET_AUTH_USER = os.environ.get('AUTH_USER')
-        for i in GET_AUTH_USER.split(','):
-            AUTH_USER.append(int(i))
-        print(AUTH_USER)
+        # API_KEY = os.environ.get('API_KEY')
+        # API_EMAIL = os.environ.get('API_EMAIL')
+        # GET_AUTH_USER = os.environ.get('AUTH_USER')
+        # for i in GET_AUTH_USER.split(','):
+        #     AUTH_USER.append(int(i))
     else:
         from sample_config import Config
 
         BOT_TOKEN = Config.BOT_TOKEN
         APP_ID = Config.APP_ID
         API_HASH = Config.API_HASH
-        API_KEY = Config.API_KEY
-        API_EMAIL = Config.API_EMAIL
-        AUTH_USER = Config.AUTH_USERS
-        print(AUTH_USER)
+        # API_KEY = Config.API_KEY
+        # API_EMAIL = Config.API_EMAIL
+        # AUTH_USER = Config.AUTH_USERS
 except KeyError:
     LOGGER.error('One or more configuration values are missing exiting now.')
     exit(1)
