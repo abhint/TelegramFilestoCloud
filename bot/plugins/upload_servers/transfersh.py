@@ -1,10 +1,18 @@
+#!/usr/bin/env python3
+# This is bot coded by Abhijith N T and used for educational purposes only
+# https://github.com/AbhijithNT
+# Copyright ABHIJITH N T
+# Thank you https://github.com/pyrogram/pyrogram
+
+
+
+
+import os
 import aiohttp
-from bot.plugins.display.time import time_data
 from bot import LOGGER
 from hurry.filesize import size
-import os
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
+from bot.plugins.display.time import time_data
+from ..keyboard import completedKeyboard
 
 # error
 client_exceptions = (
@@ -38,19 +46,12 @@ async def transferSH(file, client, bot, s_time):
                     f"File Name: <code>{file_name}</code>"
                     f"\nFile Size: <code>{file_size}</code>"
                 ),
-                reply_markup=InlineKeyboardMarkup(
-                    [[
-                        InlineKeyboardButton(
-                            "DOWNLOAD URL",
-                            url=f"{dl}"
-                        )
-                    ],
-                        [
-                        InlineKeyboardButton(
-                            "🗂 SOURCE",
-                            url="https://github.com/AbhijithNT/"
-                        )
-                    ]])
+                reply_markup=completedKeyboard(dl)
             )
     except client_exceptions as e:
-        print(e)
+        await client.edit_message_text(
+            chat_id=bot.from_user.id,
+            message_id=bot.message_id,
+            text=f"{e}"
+        )
+        LOGGER.info(f"{bot.from_user.id} - transferSH - file_size - {e}")

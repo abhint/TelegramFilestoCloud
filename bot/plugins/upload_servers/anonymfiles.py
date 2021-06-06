@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# This is bot coded by Abhijith N T and used for educational purposes only
-# https://github.com/AbhijithNT
-# Copyright ABHIJITH N T
-# Thank you https://github.com/pyrogram/pyrogram
-
-
-
 
 import os
 import aiohttp
@@ -14,36 +6,35 @@ from hurry.filesize import size
 from ..keyboard import completedKeyboard
 from bot.plugins.display.time import time_data
 
-client_exceptions = (
+
+client_except = (
     aiohttp.ClientResponseError,
     aiohttp.ClientConnectionError,
     aiohttp.ClientPayloadError,
 )
 
 
-async def fileIO(file, client, bot, s_time):
+async def anonymFiles(file, client, bot, s_time):
     file_size = size(os.path.getsize(file))
     file_name = file.split('/')[-1]
+    await client.edit_message_text(
+        chat_id=bot.from_user.id,
+        message_id=bot.message_id,
+        text="Uploading to anonymfiles.com"
+    )
     try:
-        await client.edit_message_text(
-            chat_id=bot.from_user.id,
-            message_id=bot.message_id,
-            text="Uploading to File.IO"
-        )
         async with aiohttp.ClientSession() as session:
             files = {
                 'file': open(file, 'rb')
             }
-            response = await session.post('https://file.io/', data=files)
-
-            link = await response.json()
-            dl = link['link']
+            response = await session.post('https://api.anonfiles.com/upload', data=files)
+            dlj = await response.json()
+            dl = dlj['data']['file']['url']['short']
             await client.edit_message_text(
                 chat_id=bot.from_user.id,
                 message_id=bot.message_id,
                 text=f"Uploaded...100% in {time_data(s_time)}"
             )
-
             await client.send_message(
                 chat_id=bot.chat.id,
                 text=(
@@ -52,10 +43,10 @@ async def fileIO(file, client, bot, s_time):
                 ),
                 reply_markup=completedKeyboard(dl)
             )
-    except client_exceptions as e:
+    except client_except as e:
         await client.edit_message_text(
             chat_id=bot.from_user.id,
             message_id=bot.message_id,
             text=f"{e}"
         )
-        LOGGER.info(f"{bot.from_user.id} - fileIO - file_size - {e}")
+        LOGGER.info(f"{bot.from_user.id} - anonymfiles.com - file_size - {e}")

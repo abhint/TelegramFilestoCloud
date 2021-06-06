@@ -22,5 +22,33 @@ def server_select():
                 callback_data="File.io"
             )
         ],
+        [
+            InlineKeyboardButton(
+                "gofile.io",
+                callback_data="gofileio"
+            ),
+            InlineKeyboardButton(
+                "anonymfiles.com",
+                callback_data="anonymfiles"
+            )
+        ]
     ]
     return InlineKeyboardMarkup(upload_selection)
+
+
+def completedKeyboard(dl):
+    replayMarkup = InlineKeyboardMarkup(
+        [[
+            InlineKeyboardButton(
+                "DOWNLOAD URL",
+                url=f"{dl}"
+            )
+        ],
+            [
+            InlineKeyboardButton(
+                "🗂 SOURCE",
+                url="https://github.com/AbhijithNT/"
+            )
+        ]])
+
+    return replayMarkup
