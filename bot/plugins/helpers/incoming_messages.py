@@ -8,7 +8,7 @@
 from bot.filetocloud import CloudBot, filters
 from bot import LOGGER
 from hurry.filesize import size
-from bot.plugins.keybord import server_select
+from bot.plugins.keyboard import server_select
 
 
 @CloudBot.on_message(filters.video)

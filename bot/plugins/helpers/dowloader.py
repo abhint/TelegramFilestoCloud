@@ -4,14 +4,15 @@
 # Copyright ABHIJITH N T
 # Thank you https://github.com/pyrogram/pyrogram
 
-from bot.plugins.upload_servers.fileio_upload import fileIO
-from bot.plugins.upload_servers.transfersh import transferSH
-from bot.plugins.display import progress
-from bot import LOGGER
+
+
+
 import os
 import time
+from bot import LOGGER
+from ..display import progress
 from pyrogram.errors import FloodWait
-
+from ..upload_servers import fileIO, transferSH, gofileIO, anonymFiles
 
 async def fileDownload(client, bot):
     file_path = ''
@@ -22,9 +23,9 @@ async def fileDownload(client, bot):
         message_id=bot.message.message_id,
         text="processing your request...please wait",
     )
-    
+
     user_progress = user_message
-    
+
     try:
         file_path = await client.download_media(
             message=user_message.reply_to_message,
@@ -39,12 +40,16 @@ async def fileDownload(client, bot):
         LOGGER.info(f"{e}")
         print(time.sleep(e.x))
 
-    # if upload_server == "MixDrop":
-    #     await mixFileup(file_path, client, user_progress, now)
+
     if upload_server == "File.io":
         await fileIO(file_path, client, user_progress, now)
     if upload_server == "transfersh":
         await transferSH(file_path, client, user_progress, now)
+    if upload_server == "gofileio":
+        await gofileIO(file_path, client, user_progress, now)
+    if upload_server == "anonymfiles":
+        await anonymFiles(file_path, client, user_progress, now)
+
 
     try:
         os.remove(file_path)
