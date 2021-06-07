@@ -1,10 +1,8 @@
 ## What is about this bot ?
 
-### This bot uploads telegram files to MixDrop.co, File.io.
-### Usage: Send any file, and the bot will upload it to MixDrop.co, File.io
+#### This bot uploads telegram files to a third-party server. 
+#### Usage: Send any file or bot. Then select the third-party server you want to upload to.
 
-### Heroku Deploy
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Abhijith-cloud/Telegram-MixDrop-Bot/)
 
 # Installation
 #### Clone 
@@ -37,6 +35,10 @@ class Config:
 ```sh
 python3 -m bot
 ```
+
+### Heroku Deploy
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Abhijith-cloud/Telegram-MixDrop-Bot/)
+
 ## :clap:  Supporters
 [![Stargazers repo roster for @Abhijith-cloud/TelegramFiletoCloud](https://reporoster.com/stars/AbhijithNT/TelegramFiletoCloud)](https://github.com/Abhijith-cloud/TelegramFiletoCloud/stargazers)
 [![Forkers repo roster for @Abhijith-cloud/TelegramFiletoCloud](https://reporoster.com/forks/AbhijithNT/TelegramFiletoCloud)](https://github.com/Abhijith-cloud/TelegramFiletoCloud/network/members)
