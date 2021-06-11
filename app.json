@@ -1,45 +1,33 @@
 {
-    "name": "Telegram MixDrop Bot",
-    "description": "This bot uploads telegram files to MixDrop.co,File.io.",
-    "repository": "https://github.com/AbhijithNT/Telegram-MixDrop-Bot/",
-    "keywords": [
-      "telegram",
-      "pyrogram",
-      "telegram bot"
-    ],
-    "env": {
-        "ENV": {
-            "description": "Set it to anything to enable configuration by environment variables.",
-            "value": "True"
-        },
-       "BOT_TOKEN": {
-        "description": "Your Bot token from @Botfather",
-        "value": ""
-      },
-      "APP_ID": {
-        "description": "Your API_ID from https://my.telegram.org/apps ",
-        "value": ""
-      },
-      "API_HASH": {
-        "description": "Your API_HASH from https://my.telegram.org/apps",
-        "value": ""
-      },
-        "API_KEY": {
-        "description": "Your API_HASH from https://mixdrop.co/",
-        "value": ""
-      }, 
-        "API_EMAIL": {
-        "description": "Your API_HASH from https://mixdrop.co/",
-        "value": ""
-      },
-      "AUTH_USER": {
-        "description": "Add Your Telegram Chat ID e.g: 1070202696, NEXT CHAT ID , AND NEXT CHAT ID",
-        "value" : "1070202696,"
-      }
-     },
-     "buildpacks": [
-      {
-        "url": "heroku/python"
-      }
-    ]
-  }
+  "name": "Telegram MixDrop Bot",
+  "description": "This bot uploads telegram files to MixDrop.co,File.io.",
+  "repository": "https://github.com/AbhijithNT/Telegram-MixDrop-Bot/",
+  "keywords": ["telegram", "pyrogram", "telegram bot"],
+  "env": {
+    "ENV": {
+      "description": "Set it to anything to enable configuration by environment variables.",
+      "value": "True"
+    },
+    "BOT_TOKEN": {
+      "description": "Your Bot token from @Botfather",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Your API_ID from https://my.telegram.org/apps ",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your API_HASH from https://my.telegram.org/apps",
+      "value": ""
+    },
+    "AUTH_USER": {
+      "description": "Add Your Telegram Chat ID e.g: 1070202696, NEXT CHAT ID , AND NEXT CHAT ID",
+      "value": "1070202696,"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
