@@ -4,7 +4,7 @@
 #### Usage: Send any file or bot. Then select the third-party server you want to upload to.
 
 
-# Installation
+### Installation
 #### Clone
 
 ```sh
