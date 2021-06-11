@@ -5,13 +5,14 @@
 # Thank you https://github.com/pyrogram/pyrogram
 
 
-from bot.filetocloud import CloudBot, filters
+from ...filetocloud import CloudBot
 from bot import LOGGER
 from hurry.filesize import size
-from bot.plugins.keyboard import server_select
+from ..keyboard import server_select
+from ..use import VIDEO, DOCUMENT, AUDIO
 
 
-@CloudBot.on_message(filters.video)
+@CloudBot.on_message(VIDEO)
 async def userVideo(client, bot):
     LOGGER.info(f"{bot.chat.id} - {bot.video.file_name}")
     await client.send_message(
@@ -25,7 +26,7 @@ async def userVideo(client, bot):
     )
 
 
-@CloudBot.on_message(filters.document)
+@CloudBot.on_message(DOCUMENT)
 async def userDocument(client, bot):
     LOGGER.info(f"{bot.chat.id} - {bot.document.file_name}")
     await client.send_message(
@@ -39,7 +40,7 @@ async def userDocument(client, bot):
     )
 
 
-@CloudBot.on_message(filters.audio)
+@CloudBot.on_message(AUDIO)
 async def userAudio(client, bot):
     LOGGER.info(f"{bot.chat.id} - {bot.audio.file_name}")
     await client.send_message(
