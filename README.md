@@ -1,6 +1,6 @@
 ## What is about this bot ?
 
-#### This bot uploads telegram files to a third-party server. 
+#### This bot uploads telegram files to a third-party server.
 #### Usage: Send any file or bot. Then select the third-party server you want to upload to.
 
 
@@ -23,9 +23,11 @@ pip3 install -U -r requirements.txt
 
 ```python3
 class Config:
-    BOT_TOKEN = '1051231515:AAGv9yJbkpqQBx5nPnSRTNjF66Y5C9u4u3E'  # from @botfather
-    APP_ID = 1234567                                              # from https://my.telegram.org/apps
-    API_HASH = 'a6ec7e2ead26d1bcac4a3997780a864c'                 # from https://my.telegram.org/apps
+    BOT_USE = False                        # True is private use
+    BOT_TOKEN = ''                         # from @botfather
+    APP_ID =                               # from https://my.telegram.org/apps
+    API_HASH = ''                          # from https://my.telegram.org/apps
+    AUTH_USERS = []                        # Private users id
 ```
 
 #### Run this bot
