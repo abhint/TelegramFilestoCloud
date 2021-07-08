@@ -9,10 +9,13 @@ from bot.plugins.display.time import time_data
 
 
 async def progress(current, total, up_msg, message, start_time):
-    
+
+
+    percent = round(current * 100 // total)
+    pb = progressBar(percent)
+
     try:
-        percent = round(current * 100 // total)
-        pb = progressBar(percent)
+        
         await message.edit(
             text="{0} {1}%".format(
                 pb,
