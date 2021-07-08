@@ -19,7 +19,6 @@ async def progress(current, total, up_msg, message, start_time):
         progressBar(percent),
                 percent
     )
-
     time_ = "Time: {0}".format(
         time_data(start_time)
     )
@@ -27,10 +26,14 @@ async def progress(current, total, up_msg, message, start_time):
     speed_ = "Speed: {0}".format(
         size(current / time_diff)
     )
+    download_ = "{0} of {1}".format(
+        size(current),
+        size(total)
+    )
     try:
 
         await message.edit(
-            text=f"{progress_}\n{speed_}\t{time_}"
+            text=f"{progress_}\n{download_}\n{speed_}    {time_}"
         )
 
     except Exception as e:
