@@ -5,30 +5,35 @@
 # Thank you https://github.com/pyrogram/pyrogram
 
 
+from hurry.filesize import size
 from bot.plugins.display.time import time_data
+import time
 
 
 async def progress(current, total, up_msg, message, start_time):
 
 
     percent = round(current * 100 // total)
-    pb = await progressBar(percent)
-
+    progress_ = "{0} {1}%".format(
+        progressBar(percent),
+                percent
+    )
+    time_ = "Time: {0}".format(
+        time_data(start_time)
+    )
     try:
 
         await message.edit(
-            text="{0} {1}%".format(
-                pb,
-                percent
-            )
+            text=f"{progress_}\n{time_}"
         )
+
     except Exception as e:
         await message.edit(
             text=f"ERROR: {e}"
         )
 
 
-async def progressBar(percent):
+def progressBar(percent):
     done_block = '█'
     empty_block = '░'
     return f"{done_block * int(percent / 5)}{empty_block * int(20 - int(percent / 5))}"
