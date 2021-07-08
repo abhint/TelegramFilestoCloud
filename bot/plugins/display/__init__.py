@@ -11,8 +11,8 @@ from bot.plugins.display.time import time_data
 async def progress(current, total, up_msg, message, start_time):
 
 
-    percent = round(current * 100 // total)
-    pb = progressBar(percent)
+    percent = await round(current * 100 // total)
+    pb = await progressBar(percent)
 
     try:
         
@@ -28,7 +28,7 @@ async def progress(current, total, up_msg, message, start_time):
         )
 
 
-def progressBar(percent):
+async def progressBar(percent):
     done_block = '█'
     empty_block = '░'
     return f"{done_block * int(percent / 5)}{empty_block * int(20 - int(percent / 5))}"
