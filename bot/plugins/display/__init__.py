@@ -24,11 +24,11 @@ async def progress(current, total, up_msg, message, start_time):
     )
 
     speed_ = "Speed: {0}".format(
-        size(current / time_diff)
+        human_readable_size(size=current / time_diff)
     )
     download_ = "{0} of {1}".format(
-        size(current),
-        size(total)
+        human_readable_size(current),
+        human_readable_size(total)
     )
     try:
 
@@ -46,3 +46,11 @@ def progressBar(percent):
     done_block = '█'
     empty_block = '░'
     return f"{done_block * int(percent / 5)}{empty_block * int(20 - int(percent / 5))}"
+
+
+def human_readable_size(size, decimal_places=2):
+    for unit in ['B', 'KiB', 'MiB', 'GiB', 'TiB']:
+        if size < 1024.0:
+            break
+        size /= 1024.0
+    return f"{size:.{decimal_places}f}{unit}"
