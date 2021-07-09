@@ -14,10 +14,10 @@ async def progress(current, total, up_msg, message, start_time):
 
     time_now = time.time()
     time_diff = time_now - start_time
-    percent = f"{current * 100 / total:.1f}"
+    percent = round(current * 100 // total)
     progress_ = "{0} {1}%".format(
         progressBar(percent),
-                percent
+        f"{current * 100 / total:.1f}"
     )
     time_ = "Time: {0}".format(
         time_data(start_time)
