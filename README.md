@@ -40,7 +40,7 @@ python3 -m bot
 
 ## :clap:  Supporters
 
-###Stargazers
+### Stargazers
 [![Stargazers repo roster for @AbhijithNT/TelegramFiletoCloud](https://reporoster.com/stars/AbhijithNT/TelegramFiletoCloud)](https://github.com/AbhijithNT/TelegramFiletoCloud/stargazers)
-###Forkers
+### Forkers
 [![Forkers repo roster for @AbhijithNT/TelegramFiletoCloud](https://reporoster.com/forks/AbhijithNT/TelegramFiletoCloud)](https://github.com/AbhijithNT/TelegramFiletoCloud/network/members)
