@@ -39,5 +39,6 @@ python3 -m bot
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Abhijith-cloud/Telegram-MixDrop-Bot/)
 
 ## :clap:  Supporters
-[![Stargazers repo roster for @Abhijith-cloud/TelegramFiletoCloud](https://reporoster.com/stars/AbhijithNT/TelegramFiletoCloud)](https://github.com/Abhijith-cloud/TelegramFiletoCloud/stargazers)
-[![Forkers repo roster for @Abhijith-cloud/TelegramFiletoCloud](https://reporoster.com/forks/AbhijithNT/TelegramFiletoCloud)](https://github.com/Abhijith-cloud/TelegramFiletoCloud/network/members)
+
+##Stargazers
+[![Stargazers repo roster for @AbhijithNT/TelegramFiletoCloud](https://reporoster.com/stars/AbhijithNT/TelegramFiletoCloud)](https://github.com/AbhijithNT/TelegramFiletoCloud/stargazers)
