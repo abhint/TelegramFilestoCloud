@@ -3,6 +3,12 @@
 #### This bot uploads telegram files to a third-party server.
 #### Usage: Send any file or bot. Then select the third-party server you want to upload to.
 
+### Supported clouds
+- [x] anonfiles.com
+- [x] file.io
+- [x] gofile.io
+- [x] Transfer.sh
+- [ ] mixdrop.co
 
 ### Installation
 #### Clone
