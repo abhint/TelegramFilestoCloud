@@ -1,5 +1,6 @@
-#Bot Logger
-log.txt
+#Bot
+*.txt
+old
 #22
 *.session
 # Byte-compiled / optimized / DLL files

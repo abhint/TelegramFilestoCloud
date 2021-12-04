@@ -4,43 +4,80 @@
 # Copyright ABHIJITH N T
 # Thank you https://github.com/pyrogram/pyrogram
 
-import os
 import logging
+from .env import get_env
+from logging.handlers import RotatingFileHandler
 
-logging.basicConfig(level=logging.INFO,
-                    handlers=[logging.FileHandler(
-                        'log.txt'), logging.StreamHandler()],
-                    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-                    )
-LOGGER = logging.getLogger(__name__)
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
-
-ENV = bool(os.environ.get('ENV', False))
-try:
-    if ENV:
-        AUTH_USER = []
-        BOT_TOKEN = os.environ.get('BOT_TOKEN')
-        APP_ID = os.environ.get('APP_ID')
-        API_HASH = os.environ.get('API_HASH')
-        BOT_USE = bool(os.environ.get('BOT_USE', False))
-        GET_AUTH_USER = os.environ.get('AUTH_USER')
-        for i in GET_AUTH_USER.split(','):
-            AUTH_USER.append(int(i))
-    else:
-        from sample_config import Config
-
-        BOT_TOKEN = Config.BOT_TOKEN
-        APP_ID = Config.APP_ID
-        API_HASH = Config.API_HASH
-        BOT_USE = Config.BOT_USE
-        AUTH_USER = Config.AUTH_USERS
-except KeyError:
-    LOGGER.error('One or more configuration values are missing exiting now.')
-    exit(1)
+API_ID = get_env('API_ID')
+API_HASH = get_env('API_HASH')
+BOT_TOKEN = get_env('BOT_TOKEN')
 
 
-class Msg:
-    source = "\nsource: https://github.com/AbhijithNT/TelegramFiletoCloud"
-    start = "\n<b>This bot uploads telegram files to MixDrop.co,File.io.\nAdmin: @thankappan369</b>"
-    error = "something is went wrong\n{error} \ncontact admin @thankappan369"
-    help = "Usage: <b>Send any file and the bot will upload it to MixDrop.co,File.io</b>"
+# messages
+
+SOURCE = "\nsource: https://github.com/AbhijithNT/TelegramFiletoCloud"
+START = "\n<b>This bot uploads telegram files to MixDrop.co,File.io.\nAdmin: @thankappan369</b>"
+ERROR = "something is went wrong\n{error} \ncontact admin @thankappan369"
+HELP = "Usage: <b>Send any file and the bot will upload it to MixDrop.co,File.io</b>"
+
+
+# LOGGER
+
+LOGGER_FILE_NAME = "filetocloud_log.txt"
+logging.basicConfig(
+    level=logging.INFO,
+    format="[%(asctime)s - %(levelname)s] - %(name)s - %(message)s",
+    datefmt='%d-%b-%y %H:%M:%S',
+    handlers=[
+        RotatingFileHandler(
+            LOGGER_FILE_NAME, maxBytes=50000000, backupCount=10),
+        logging.StreamHandler()
+    ])
+logging.getLogger('pyrogram').setLevel(logging.WARNING)
+
+
+def LOGGER(log: str) -> logging.Logger:
+    """Logger function"""
+    return logging.getLogger(log)
+
+
+# import os
+# import logging
+
+# logging.basicConfig(level=logging.INFO,
+#                     handlers=[logging.FileHandler(
+#                         'log.txt'), logging.StreamHandler()],
+#                     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+#                     )
+# LOGGER = logging.getLogger(__name__)
+# logging.getLogger("pyrogram").setLevel(logging.WARNING)
+
+# ENV = bool(os.environ.get('ENV', False))
+# try:
+#     if ENV:
+#         AUTH_USER = []
+#         BOT_TOKEN = os.environ.get('BOT_TOKEN')
+#         APP_ID = os.environ.get('APP_ID')
+#         API_HASH = os.environ.get('API_HASH')
+#         BOT_USE = bool(os.environ.get('BOT_USE', False))
+#         GET_AUTH_USER = os.environ.get('AUTH_USER')
+#         for i in GET_AUTH_USER.split(','):
+#             AUTH_USER.append(int(i))
+#     else:
+#         from sample_config import Config
+
+#         BOT_TOKEN = Config.BOT_TOKEN
+#         APP_ID = Config.APP_ID
+#         API_HASH = Config.API_HASH
+#         BOT_USE = Config.BOT_USE
+#         AUTH_USER = Config.AUTH_USERS
+# except KeyError:
+#     LOGGER.error('One or more configuration values are missing exiting now.')
+#     exit(1)
+
+
+# class Msg:
+#     source = "\nsource: https://github.com/AbhijithNT/TelegramFiletoCloud"
+#     start = "\n<b>This bot uploads telegram files to MixDrop.co,File.io.\nAdmin: @thankappan369</b>"
+#     error = "something is went wrong\n{error} \ncontact admin @thankappan369"
+#     help = "Usage: <b>Send any file and the bot will upload it to MixDrop.co,File.io</b>"

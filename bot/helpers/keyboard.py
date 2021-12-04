@@ -10,45 +10,27 @@ from pyrogram.types import (
 )
 
 
-def server_select():
+def server_select(file_name: str, size: str):
     upload_selection = [
         [
             InlineKeyboardButton(
                 "transfer.sh",
-                callback_data="transfersh"
+                callback_data=f'transfersh|{file_name}|{size}'
             ),
             InlineKeyboardButton(
                 "File.io",
-                callback_data="File.io"
+                callback_data=f"fileio|{file_name}|{size}"
             )
         ],
         [
             InlineKeyboardButton(
                 "gofile.io",
-                callback_data="gofileio"
+                callback_data=f"gofileio|{file_name}|{size}"
             ),
             InlineKeyboardButton(
                 "anonymfiles.com",
-                callback_data="anonymfiles"
+                callback_data=f"anonymfiles|{file_name}|{size}"
             )
         ]
     ]
     return InlineKeyboardMarkup(upload_selection)
-
-
-def completedKeyboard(dl):
-    replayMarkup = InlineKeyboardMarkup(
-        [[
-            InlineKeyboardButton(
-                "DOWNLOAD URL",
-                url=f"{dl}"
-            )
-        ],
-            [
-            InlineKeyboardButton(
-                "🗂 SOURCE",
-                url="https://github.com/AbhijithNT/"
-            )
-        ]])
-
-    return replayMarkup

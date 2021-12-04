@@ -5,12 +5,14 @@
 # Thank you https://github.com/pyrogram/pyrogram
 
 
+
 from hurry.filesize import size
-from bot.plugins.display.time import time_data
+from .time import time_data
 import time
+from pyrogram.types import Message
 
 
-async def progress(current, total, up_msg, message, start_time):
+async def progress(current, total, up_msg, message: Message, start_time):
 
     time_now = time.time()
     time_diff = time_now - start_time
