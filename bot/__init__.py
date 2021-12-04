@@ -12,6 +12,15 @@ API_ID = get_env('API_ID')
 API_HASH = get_env('API_HASH')
 BOT_TOKEN = get_env('BOT_TOKEN')
 
+
+#messages
+
+SOURCE = "\nsource: https://github.com/AbhijithNT/TelegramFiletoCloud"
+START = "\n<b>This bot uploads telegram files to MixDrop.co,File.io.\nAdmin: @thankappan369</b>"
+ERROR = "something is went wrong\n{error} \ncontact admin @thankappan369"
+HELP = "Usage: <b>Send any file and the bot will upload it to MixDrop.co,File.io</b>"
+
+
 # LOGGER
 
 logging.basicConfig(
