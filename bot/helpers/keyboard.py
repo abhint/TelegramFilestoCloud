@@ -19,7 +19,7 @@ def server_select():
             ),
             InlineKeyboardButton(
                 "File.io",
-                callback_data="File.io"
+                callback_data="fileio"
             )
         ],
         [
