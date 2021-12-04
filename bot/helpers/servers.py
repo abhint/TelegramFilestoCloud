@@ -29,7 +29,7 @@ async def upload_handler(client: CloudBot, message: CallbackQuery, file_name: st
             return
 
         elif callback_data.startswith('gofileio'):
-            url = 'https://store9.gofile.io/uploadFile'
+            url = 'https://store1.gofile.io/uploadFile'
             response = await server_upload(file=FILE_PATH, url=url)
             _URL = await gofileIO(response)
 
