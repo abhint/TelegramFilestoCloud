@@ -32,9 +32,9 @@ async def download_media(client: CloudBot, message: CallbackQuery, ) -> str:
         return download_file_path
     except RPCError as e:
         logger.error(e)
-        client.edit_message_text(
-            chat_id=message.from_user.id,
-            message_id=message.message.message_id,
-            text="Someting is error",
-        )
-        return
+        # client.edit_message_text(
+        #     chat_id=message.from_user.id,
+        #     message_id=message.message.message_id,
+        #     text="Someting is error",
+        # )
+        raise Exception(e)
