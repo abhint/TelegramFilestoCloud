@@ -13,7 +13,7 @@ API_HASH = get_env('API_HASH')
 BOT_TOKEN = get_env('BOT_TOKEN')
 
 
-#messages
+# messages
 
 SOURCE = "\nsource: https://github.com/AbhijithNT/TelegramFiletoCloud"
 START = "\n<b>This bot uploads telegram files to MixDrop.co,File.io.\nAdmin: @thankappan369</b>"
@@ -23,12 +23,14 @@ HELP = "Usage: <b>Send any file and the bot will upload it to MixDrop.co,File.io
 
 # LOGGER
 
+LOGGER_FILE_NAME = "filetocloud_log.txt"
 logging.basicConfig(
     level=logging.INFO,
     format="[%(asctime)s - %(levelname)s] - %(name)s - %(message)s",
     datefmt='%d-%b-%y %H:%M:%S',
     handlers=[
-        RotatingFileHandler('tmdb_log.txt', maxBytes=50000000, backupCount=10),
+        RotatingFileHandler(
+            LOGGER_FILE_NAME, maxBytes=50000000, backupCount=10),
         logging.StreamHandler()
     ])
 logging.getLogger('pyrogram').setLevel(logging.WARNING)
