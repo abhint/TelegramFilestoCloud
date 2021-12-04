@@ -1,5 +1,5 @@
 #Bot
-log.txt
+*.txt
 old
 #22
 *.session
