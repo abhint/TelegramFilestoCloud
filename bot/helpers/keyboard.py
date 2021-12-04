@@ -10,26 +10,26 @@ from pyrogram.types import (
 )
 
 
-def server_select():
+def server_select(file_name: str, size: str):
     upload_selection = [
         [
             InlineKeyboardButton(
                 "transfer.sh",
-                callback_data="transfersh"
+                callback_data=f'transfersh|{file_name}|{size}'
             ),
             InlineKeyboardButton(
                 "File.io",
-                callback_data="fileio"
+                callback_data=f"fileio|{file_name}|{size}"
             )
         ],
         [
             InlineKeyboardButton(
                 "gofile.io",
-                callback_data="gofileio"
+                callback_data=f"gofileio|{file_name}|{size}"
             ),
             InlineKeyboardButton(
                 "anonymfiles.com",
-                callback_data="anonymfiles"
+                callback_data=f"anonymfiles|{file_name}|{size}"
             )
         ]
     ]
