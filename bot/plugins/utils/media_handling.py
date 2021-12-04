@@ -31,13 +31,15 @@ logger = LOGGER(__name__)
 @CloudBot.on_message(VIDEO)
 async def userVideo(client, bot):
     logger.info(f"{bot.chat.id} - {bot.video.file_name}")
+    file_name = bot.video.file_name
+    file_size = size(bot.video.file_size)
     await client.send_message(
         chat_id=bot.chat.id,
         text=(
-            f"File Name: <code>{bot.video.file_name}</code>"
-            f"\nFile Size: <code>{size(bot.video.file_size)}</code>"
+            f"File Name: `{file_name}`"
+            f"File Size: `{file_size}`"
         ),
-        reply_markup=server_select(),
+        reply_markup=server_select(file_name,file_size),
         reply_to_message_id=bot.message_id
     )
 
@@ -45,13 +47,15 @@ async def userVideo(client, bot):
 @CloudBot.on_message(DOCUMENT)
 async def userDocument(client, bot):
     logger.info(f"{bot.chat.id} - {bot.document.file_name}")
+    file_name = bot.document.file_name
+    file_size = size(bot.document.file_size)
     await client.send_message(
         chat_id=bot.chat.id,
         text=(
-            f"File Name: <code>{bot.document.file_name}</code>"
-            f"\nFile Size: <code>{size(bot.document.file_size)}</code>"
+            f"File Name: `{file_name}`"
+            f"File Size: `{file_size}`"
         ),
-        reply_markup=server_select(),
+        reply_markup=server_select(file_name,file_size),
         reply_to_message_id=bot.message_id
     )
 
@@ -59,12 +63,14 @@ async def userDocument(client, bot):
 @CloudBot.on_message(AUDIO)
 async def userAudio(client, bot):
     logger.info(f"{bot.chat.id} - {bot.audio.file_name}")
+    file_name = bot.audio.file_name
+    file_size = size(bot.audio.file_size)
     await client.send_message(
         chat_id=bot.chat.id,
         text=(
-            f"File Name: <code>{bot.audio.file_name}</code>"
-            f"\nFile Size: <code>{size(bot.audio.file_size)}</code>"
+            f"File Name: <code>`{file_name}`</code>"
+            f"\nFile Size: <code>{file_size}</code>"
         ),
-        reply_markup=server_select(),
+        reply_markup=server_select(file_name,file_size),
         reply_to_message_id=bot.message_id
     )
