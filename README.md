@@ -27,11 +27,11 @@ pip3 install -U -r requirements.txt
 ```
 #### Edit Sample_config.py and replace it with your bot details like this
 
-```python3
+```python
 class Config:
     BOT_USE = False                        # True is private use
     BOT_TOKEN = ''                         # from @botfather
-    APP_ID =                               # from https://my.telegram.org/apps
+    APP_ID = 1234567                       # from https://my.telegram.org/apps
     API_HASH = ''                          # from https://my.telegram.org/apps
     AUTH_USERS = []                        # Private users id
 ```
@@ -42,11 +42,11 @@ python3 -m bot
 ```
 
 ### Heroku Deploy
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AbhijithNT/TelegramFiletoCloud)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## :clap:  Supporters
 
 ### Stargazers
-[![Stargazers repo roster for @AbhijithNT/TelegramFiletoCloud](https://reporoster.com/stars/dark/AbhijithNT/TelegramFiletoCloud)](https://github.com/AbhijithNT/TelegramFiletoCloud/stargazers)
+[![Stargazers repo roster for @abhint/TelegramFilestoCloud](https://reporoster.com/stars/dark/abhint/TelegramFilestoCloud)](https://github.com/abhint/TelegramFilestoCloud/stargazers)
 ### Forkers
-[![Forkers repo roster for @AbhijithNT/TelegramFiletoCloud](https://reporoster.com/forks/dark/AbhijithNT/TelegramFiletoCloud)](https://github.com/AbhijithNT/TelegramFiletoCloud/network/members)
+[![Forkers repo roster for @abhint/TelegramFilestoCloud](https://reporoster.com/forks/dark/abhint/TelegramFilestoCloud)](https://github.com/abhint/TelegramFilestoCloud/network/members)

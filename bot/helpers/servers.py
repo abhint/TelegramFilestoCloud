@@ -3,17 +3,19 @@ from ..filetocloud import CloudBot
 from .upload import server_upload
 from ..helpers import download_media
 from pyrogram.types import CallbackQuery
+from hurry.filesize import size
 
 logger = LOGGER(__name__)
 
 link = ""
 
 
-async def upload_handler(client: CloudBot, message: CallbackQuery, file_name: str, file_size: str, callback_data: str):
+async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data: str):
     global link
+    file_name = message.message.reply_to_message.video.file_name
+    file_ize = size(message.message.reply_to_message.video.file_size)
     try:
         file_path = await download_media(client, message)
-        print(file_path)
     except Exception as e:
         logger.error(f"{e}")
         await client.edit_message_text(
@@ -51,16 +53,16 @@ async def upload_handler(client: CloudBot, message: CallbackQuery, file_name: st
             url = 'https://api.anonfiles.com/upload'
             response = await server_upload(file=file_path, url=url)
             link = await anonfiles(response)
-
-        await client.edit_message_text(
+        await client.send_message(
             chat_id=message.message.chat.id,
-            text=(
-                f"File Name: `{file_name}`"
-                f"\nFile Size: `{file_size}`"
-                f'\nURL: `{link}`'
-            ),
-            message_id=message.message.message_id
-            # reply_markup=completedKeyboard(dl)
+            text=(f"File Name: `{file_name}`"
+                  f"\nFile Size: `{file_ize}`"
+                  f'\nURL: `{link}`'),
+            reply_to_message_id=message.message.reply_to_message.message_id
+        )
+        await client.delete_messages(
+            chat_id=message.message.chat.id,
+            message_ids=message.message.message_id
         )
     except Exception as e:
         logger.error(f'{e}')
