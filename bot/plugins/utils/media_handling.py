@@ -9,6 +9,7 @@ from ...filetocloud import CloudBot, filters
 from bot import LOGGER
 from hurry.filesize import size
 from ...helpers import server_select
+
 # from ..use import VIDEO, DOCUMENT, AUDIO
 
 BOT_USE = False
@@ -24,7 +25,6 @@ else:
     DOCUMENT = filters.document
     AUDIO = filters.audio
 
-
 logger = LOGGER(__name__)
 
 
@@ -32,14 +32,13 @@ logger = LOGGER(__name__)
 async def userVideo(client, bot):
     logger.info(f"{bot.chat.id} - {bot.video.file_name}")
     file_name = bot.video.file_name
-    file_size = size(bot.video.file_size)
     await client.send_message(
         chat_id=bot.chat.id,
         text=(
             f"File Name: `{file_name}`"
-            f"File Size: `{file_size}`"
+            f"File Size: `{size(bot.video.file_size)}`"
         ),
-        reply_markup=server_select(file_name,file_size),
+        reply_markup=server_select(),
         reply_to_message_id=bot.message_id
     )
 
@@ -55,7 +54,7 @@ async def userDocument(client, bot):
             f"File Name: `{file_name}`"
             f"File Size: `{file_size}`"
         ),
-        reply_markup=server_select(file_name,file_size),
+        reply_markup=server_select(),
         reply_to_message_id=bot.message_id
     )
 
@@ -71,6 +70,6 @@ async def userAudio(client, bot):
             f"File Name: <code>`{file_name}`</code>"
             f"\nFile Size: <code>{file_size}</code>"
         ),
-        reply_markup=server_select(file_name,file_size),
+        reply_markup=server_select(),
         reply_to_message_id=bot.message_id
     )
