@@ -3,14 +3,14 @@ from ..filetocloud import CloudBot
 from .upload import server_upload
 from ..helpers import download_media
 from pyrogram.types import CallbackQuery
+from hurry.filesize import size
 
 logger = LOGGER(__name__)
 
-link = ""
 
-
-async def upload_handler(client: CloudBot, message: CallbackQuery, file_name: str, file_size: str, callback_data: str):
-    global link
+async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data: str):
+    file_name = message.message.reply_to_message.video.file_name
+    file_ize = size(message.message.reply_to_message.video.file_size)
     try:
         file_path = await download_media(client, message)
         print(file_path)
@@ -56,7 +56,7 @@ async def upload_handler(client: CloudBot, message: CallbackQuery, file_name: st
             chat_id=message.message.chat.id,
             text=(
                 f"File Name: `{file_name}`"
-                f"\nFile Size: `{file_size}`"
+                f"\nFile Size: `{file_ize}`"
                 f'\nURL: `{link}`'
             ),
             message_id=message.message.message_id
