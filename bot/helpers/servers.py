@@ -53,15 +53,16 @@ async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data
             url = 'https://api.anonfiles.com/upload'
             response = await server_upload(file=file_path, url=url)
             link = await anonfiles(response)
-
-        await client.edit_message_text(
+        await client.send_message(
             chat_id=message.message.chat.id,
-            text=(
-                f"File Name: `{file_name}`"
-                f"\nFile Size: `{file_ize}`"
-                f'\nURL: `{link}`'
-            ),
-            message_id=message.message.message_id
+            text=(f"File Name: `{file_name}`"
+                  f"\nFile Size: `{file_ize}`"
+                  f'\nURL: `{link}`'),
+            reply_to_message_id=message.message.reply_to_message.message_id
+        )
+        await client.delete_messages(
+            chat_id=message.message.chat.id,
+            message_ids=message.message.message_id
         )
     except Exception as e:
         logger.error(f'{e}')
