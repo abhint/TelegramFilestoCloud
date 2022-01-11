@@ -27,7 +27,7 @@ pip3 install -U -r requirements.txt
 ```
 #### Edit Sample_config.py and replace it with your bot details like this
 
-```python3
+```python
 class Config:
     BOT_USE = False                        # True is private use
     BOT_TOKEN = ''                         # from @botfather
@@ -42,7 +42,7 @@ python3 -m bot
 ```
 
 ### Heroku Deploy
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AbhijithNT/TelegramFiletoCloud)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## :clap:  Supporters
 
