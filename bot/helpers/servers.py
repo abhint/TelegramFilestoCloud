@@ -7,13 +7,15 @@ from hurry.filesize import size
 
 logger = LOGGER(__name__)
 
+link = ""
+
 
 async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data: str):
+    global link
     file_name = message.message.reply_to_message.video.file_name
     file_ize = size(message.message.reply_to_message.video.file_size)
     try:
         file_path = await download_media(client, message)
-        print(file_path)
     except Exception as e:
         logger.error(f"{e}")
         await client.edit_message_text(
@@ -60,7 +62,6 @@ async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data
                 f'\nURL: `{link}`'
             ),
             message_id=message.message.message_id
-            # reply_markup=completedKeyboard(dl)
         )
     except Exception as e:
         logger.error(f'{e}')
