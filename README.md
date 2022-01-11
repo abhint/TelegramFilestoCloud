@@ -31,7 +31,7 @@ pip3 install -U -r requirements.txt
 class Config:
     BOT_USE = False                        # True is private use
     BOT_TOKEN = ''                         # from @botfather
-    APP_ID =                               # from https://my.telegram.org/apps
+    APP_ID = 1234567                       # from https://my.telegram.org/apps
     API_HASH = ''                          # from https://my.telegram.org/apps
     AUTH_USERS = []                        # Private users id
 ```
@@ -47,6 +47,6 @@ python3 -m bot
 ## :clap:  Supporters
 
 ### Stargazers
-[![Stargazers repo roster for @AbhijithNT/TelegramFiletoCloud](https://reporoster.com/stars/dark/AbhijithNT/TelegramFiletoCloud)](https://github.com/AbhijithNT/TelegramFiletoCloud/stargazers)
+[![Stargazers repo roster for @abhint/TelegramFilestoCloud](https://reporoster.com/stars/dark/abhint/TelegramFilestoCloud)](https://github.com/abhint/TelegramFilestoCloud/stargazers)
 ### Forkers
-[![Forkers repo roster for @AbhijithNT/TelegramFiletoCloud](https://reporoster.com/forks/dark/AbhijithNT/TelegramFiletoCloud)](https://github.com/AbhijithNT/TelegramFiletoCloud/network/members)
+[![Forkers repo roster for @abhint/TelegramFilestoCloud](https://reporoster.com/forks/dark/abhint/TelegramFilestoCloud)](https://github.com/abhint/TelegramFilestoCloud/network/members)
