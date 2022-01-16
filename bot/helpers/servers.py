@@ -12,8 +12,16 @@ link = ""
 
 async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data: str):
     global link
-    file_name = message.message.reply_to_message.video.file_name
-    file_ize = size(message.message.reply_to_message.video.file_size)
+    if message.message.reply_to_message.video:
+        file_name = message.message.reply_to_message.video.file_name
+        file_ize = size(message.message.reply_to_message.video.file_size)
+    elif message.message.reply_to_message.document:
+        file_name = message.message.reply_to_message.document.file_name
+        file_ize = size(message.message.reply_to_message.document.file_size)
+    elif message.message.reply_to_message.audio:
+        file_name = message.message.reply_to_message.audio.file_name
+        file_ize = size(message.message.reply_to_message.audio.file_size)
+
     try:
         file_path = await download_media(client, message)
     except Exception as e:
@@ -31,15 +39,8 @@ async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data
             message_id=message.message.message_id
             # reply_markup=completedKeyboard(dl)
         )
-        if callback_data.startswith('transfersh'):
-            await client.edit_message_text(
-                chat_id=message.message.chat.id,
-                text="Temporarily down",
-                message_id=message.message.message_id,
-            )
-            return
 
-        elif callback_data.startswith('gofileio'):
+        if callback_data.startswith('gofileio'):
             url = 'https://store1.gofile.io/uploadFile'
             response = await server_upload(file=file_path, url=url)
             link = await gofile_io(response)

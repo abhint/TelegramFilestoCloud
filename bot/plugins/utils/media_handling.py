@@ -29,14 +29,14 @@ logger = LOGGER(__name__)
 
 
 @CloudBot.on_message(VIDEO)
-async def userVideo(client, bot):
+async def user_video(client, bot):
     logger.info(f"{bot.chat.id} - {bot.video.file_name}")
     file_name = bot.video.file_name
     await client.send_message(
         chat_id=bot.chat.id,
         text=(
             f"File Name: `{file_name}`"
-            f"File Size: `{size(bot.video.file_size)}`"
+            f"\nFile Size: `{size(bot.video.file_size)}`"
         ),
         reply_markup=server_select(),
         reply_to_message_id=bot.message_id
@@ -44,7 +44,7 @@ async def userVideo(client, bot):
 
 
 @CloudBot.on_message(DOCUMENT)
-async def userDocument(client, bot):
+async def user_document(client, bot):
     logger.info(f"{bot.chat.id} - {bot.document.file_name}")
     file_name = bot.document.file_name
     file_size = size(bot.document.file_size)
@@ -52,7 +52,7 @@ async def userDocument(client, bot):
         chat_id=bot.chat.id,
         text=(
             f"File Name: `{file_name}`"
-            f"File Size: `{file_size}`"
+            f"\nFile Size: `{file_size}`"
         ),
         reply_markup=server_select(),
         reply_to_message_id=bot.message_id
@@ -60,7 +60,7 @@ async def userDocument(client, bot):
 
 
 @CloudBot.on_message(AUDIO)
-async def userAudio(client, bot):
+async def user_audio(client, bot):
     logger.info(f"{bot.chat.id} - {bot.audio.file_name}")
     file_name = bot.audio.file_name
     file_size = size(bot.audio.file_size)
