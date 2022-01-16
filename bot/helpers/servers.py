@@ -12,8 +12,16 @@ link = ""
 
 async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data: str):
     global link
-    file_name = message.message.reply_to_message.video.file_name
-    file_ize = size(message.message.reply_to_message.video.file_size)
+    if message.message.reply_to_message.video:
+        file_name = message.message.reply_to_message.video.file_name
+        file_ize = size(message.message.reply_to_message.video.file_size)
+    elif message.message.reply_to_message.document:
+        file_name = message.message.reply_to_message.document.file_name
+        file_ize = size(message.message.reply_to_message.document.file_size)
+    elif message.message.reply_to_message.audio:
+        file_name = message.message.reply_to_message.audio.file_name
+        file_ize = size(message.message.reply_to_message.audio.file_size)
+
     try:
         file_path = await download_media(client, message)
     except Exception as e:
