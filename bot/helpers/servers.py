@@ -31,15 +31,8 @@ async def upload_handler(client: CloudBot, message: CallbackQuery, callback_data
             message_id=message.message.message_id
             # reply_markup=completedKeyboard(dl)
         )
-        if callback_data.startswith('transfersh'):
-            await client.edit_message_text(
-                chat_id=message.message.chat.id,
-                text="Temporarily down",
-                message_id=message.message.message_id,
-            )
-            return
 
-        elif callback_data.startswith('gofileio'):
+        if callback_data.startswith('gofileio'):
             url = 'https://store1.gofile.io/uploadFile'
             response = await server_upload(file=file_path, url=url)
             link = await gofile_io(response)
