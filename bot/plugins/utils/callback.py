@@ -1,7 +1,5 @@
-from logging import fatal
 from ...filetocloud import CloudBot
 from pyrogram.types import CallbackQuery
-from ...helpers import download_media
 from ...helpers.servers import upload_handler
 
 

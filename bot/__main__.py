@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# This is bot coded by AbhijithCloud and used for educational purposes only
-# https://github.com/AbhijithNT
+# This is bot coded by ABHIJITH N T and used for educational purposes only
+# https://github.com/abhint
 # Copyright ABHIJITH N T
 # Thank you https://github.com/pyrogram/pyrogram
 
