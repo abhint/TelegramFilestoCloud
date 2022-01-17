@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # This is bot coded by Abhijith N T and used for educational purposes only
-# https://github.com/AbhijithNT
+# https://github.com/abhint
 # Copyright ABHIJITH N T
 # Thank you https://github.com/pyrogram/pyrogram
 
@@ -15,9 +15,9 @@ BOT_TOKEN = get_env('BOT_TOKEN')
 
 # messages
 
-SOURCE = "\nsource: https://github.com/AbhijithNT/TelegramFiletoCloud"
+SOURCE = "\nsource: https://github.com/abhint/TelegramFilestoCloud"
 START = "\n<b>This bot uploads telegram files to MixDrop.co,File.io.\nAdmin: @thankappan369</b>"
-ERROR = "something is went wrong\n{error} \ncontact admin @thankappan369"
+ERROR = "something is went wrong\n{error} \ncontact admin (Abhijith)[429320566]"
 HELP = "Usage: <b>Send any file and the bot will upload it to MixDrop.co,File.io</b>"
 
 
