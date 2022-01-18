@@ -10,7 +10,7 @@ from pyrogram.types import (
 )
 
 
-def server_select():
+def server_select(file_size: int):
     upload_selection = [
         [
             InlineKeyboardButton(
@@ -23,12 +23,14 @@ def server_select():
                 "gofile.io",
                 callback_data=f"gofileio"
             )
-        ],
-        [
+        ]
+    ]
+    if file_size < 1e+8:
+        # 1e+8 is 100000000.0
+        upload_selection.append([
             InlineKeyboardButton(
                 "File.io",
                 callback_data=f"fileio"
             )
-        ]
-    ]
+        ])
     return InlineKeyboardMarkup(upload_selection)
